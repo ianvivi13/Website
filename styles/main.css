@@ -1,17 +1,15 @@
+:root {
+    --important-text-color: #6fe1a8;
+}
+
 body {
     background-color: white;
     padding: 0;
     margin: 0;
 }
 
-div {
-    /*outline: black 4px solid;*/
-}
-
 #header {
-    position: relative;
-    overflow: hidden;
-    height: 100vw;
+    /*Delete this*/
 }
 
 #logo {
@@ -34,7 +32,7 @@ div {
 
 .nav-button {
     color: black;
-    font-size: 1vw;
+    font-size: 1.2vw;
     font-family: "Lato", sans-serif;
     font-weight: 100;
     font-style: normal;
@@ -44,7 +42,7 @@ div {
 }
 
 .nav-button:hover {
-    color: #6fe1a8;
+    color: var(--important-text-color);
     transition: color 0.15s ease-in-out;
 }
 
