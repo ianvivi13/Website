@@ -1,17 +1,15 @@
+:root {
+    --important-text-color: #6fe1a8;
+}
+
 body {
     background-color: white;
     padding: 0;
     margin: 0;
 }
 
-div {
-    /*outline: black 4px solid;*/
-}
-
 #header {
-    position: relative;
-    overflow: hidden;
-    height: 100vw;
+    /*Delete this*/
 }
 
 #logo {
@@ -34,7 +32,7 @@ div {
 
 .nav-button {
     color: black;
-    font-size: 1vw;
+    font-size: 1.2vw;
     font-family: "Lato", sans-serif;
     font-weight: 100;
     font-style: normal;
@@ -44,46 +42,10 @@ div {
 }
 
 .nav-button:hover {
-    color: #6fe1a8;
+    color: var(--important-text-color);
     transition: color 0.15s ease-in-out;
 }
 
 .active {
     color: #04AA6D;
-}
-
-#circle {
-    position: absolute;
-    right: -25%;
-    top: -25%;
-    width: 70%;
-    height: 0;
-    padding-top: 70%;
-    border-radius: 50%;
-    background: linear-gradient(166deg, rgba(255,255,255,1) 0%, rgba(214,255,215,1) 100%);
-    z-index: 1;
-}
-
-#headshot {
-    position: absolute;
-    right: 7.5%;
-    top: 7.5%;
-    border-radius: 50%;
-    height: 32.5%;
-    z-index: 3;
-}
-
-#header-text {
-    position: absolute;
-    top: 25%;
-    left: 10%;
-}
-
-#name {
-    font-size: 4vw;
-}
-
-#occupation {
-    font-size: 2vw;
-    color: grey;
 }

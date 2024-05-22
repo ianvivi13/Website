@@ -1,0 +1,120 @@
+#content {
+    position: relative;
+    overflow: hidden;
+    height: 100vw;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 10%, rgba(245,245,245,1) 100%);
+}
+
+#home-background {
+    position: absolute;
+    z-index: 0;
+    top: 8%;
+    width: 100%;
+    height: 44%;
+    object-fit: cover;
+    background: white;
+    opacity: 15%;
+    mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 70%, transparent 95%);
+}
+
+#circle {
+    position: absolute;
+    right: -25%;
+    top: -25%;
+    width: 70%;
+    height: 0;
+    padding-top: 70%;
+    border-radius: 50%;
+    background: radial-gradient(rgba(255,255,255, 1) 30%, rgba(214,255,215,1) 100%);
+    z-index: 1;
+}
+
+#headshot {
+    position: absolute;
+    right: 7.5%;
+    top: 7.5%;
+    border-radius: 50%;
+    height: 32.5%;
+    z-index: 3;
+}
+
+#header-text {
+    position: absolute;
+    width: 30%;
+    top: 25%;
+    left: 10%;
+}
+
+#name {
+    font-size: 4vw;
+    opacity: 100%;
+    font-weight: bold;
+    animation: fadein 2s ease-in-out;
+}
+
+#occupation {
+    font-size: 2vw;
+    color: grey;
+    animation: fadeinsub 2s ease-in-out;
+}
+
+@keyframes fadein {
+    from { margin-top: -10%; opacity: 0; }
+    to { margin-top: 0; opacity: 1; }
+}
+
+@keyframes fadeinsub {
+    from { margin-left: 10%; opacity: 0; }
+    to { margin-left: 0; opacity: 1; }
+}
+
+#about-me-header {
+    position: absolute;
+    top: 49%;
+    left: 8%;
+    color: var(--important-text-color);
+    font-weight: bold;
+    font-size: 2vw;
+}
+
+#about-me-intro-container {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 52%;
+}
+
+#about-me-intro {
+    font-size: 2.5vw;
+    font-weight: bold;
+}
+
+#minecraft-mod {
+    position: absolute;
+    border-radius: 2%;
+    width: 28%;
+    margin-left: 14%;
+    margin-top: 0.2%;
+}
+
+.about-me {
+    font-size: 1vw;
+    line-height: 1.5vw;
+}
+
+#about-me-p1, #about-me-p2 {
+    width: 40%;
+    margin-left: auto;
+    margin-right: 10%;
+}
+
+#about-me-p2 {
+    color: #777777;
+}
+
+#background {
+    color: var(--important-text-color);
+    font-size: 1.5vw;
+    margin-left: 50%;
+}
