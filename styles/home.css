@@ -1,0 +1,61 @@
+#home-background {
+    position: absolute;
+    z-index: -100;
+    top: 8%;
+    width: 100%;
+    height: 44%;
+    object-fit: cover;
+    background: white;
+    opacity: 15%;
+    mask-image: linear-gradient(to bottom, transparent 0%, black 75%);
+}
+
+#circle {
+    position: absolute;
+    right: -25%;
+    top: -25%;
+    width: 70%;
+    height: 0;
+    padding-top: 70%;
+    border-radius: 50%;
+    background: linear-gradient(166deg, rgba(255,255,255, 1) 0%, rgba(214,255,215,1) 100%);
+    z-index: 1;
+}
+
+#headshot {
+    position: absolute;
+    right: 7.5%;
+    top: 7.5%;
+    border-radius: 50%;
+    height: 32.5%;
+    z-index: 3;
+}
+
+#header-text {
+    position: absolute;
+    width: 30%;
+    top: 25%;
+    left: 10%;
+}
+
+#name {
+    font-size: 4vw;
+    opacity: 100%;
+    animation: fadein 2s ease-in-out;
+}
+
+#occupation {
+    font-size: 2vw;
+    color: grey;
+    animation: fadeinsub 2s ease-in-out;
+}
+
+@keyframes fadein {
+    from { margin-top: -10%; opacity: 0; }
+    to { margin-top: 0; opacity: 1; }
+}
+
+@keyframes fadeinsub {
+    from { margin-left: 10%; opacity: 0; }
+    to { margin-left: 0; opacity: 1; }
+}
