@@ -2,11 +2,13 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="../styles/main.css" rel="stylesheet" type="text/css" />
         <link href="../styles/home.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="../scripts/home.js"></script>
         <title>Home</title>
     </head>
-    <body>
+    <body onload="updateBottomDivPosition();">
         <div id="content">
             <img id="home-background" src="../images/home/home-background.jpg" alt="Home Page Background">
             <div id="circle"></div>
@@ -31,6 +33,7 @@
             </div>
             <div id="about-me-content">
                 <img id="minecraft-mod" src="../images/home/minecraft-mod.png" alt="Some of the stuff added in one of my Minecraft mods">
+                <span id="caption">Some modded objects from my <a href="https://github.com/ianvivi13/Bit-O-Everything-Mod">Bit O' Everything Mod</a></span>
                 <p class="about-me" id="about-me-p1">
                     Hi! my name is Ian Viveiros. I am a 22-year-old computer science graduate student from Reading, Pennsylvania. I graduated from
                     York College of Pennsylvania in December 2023 and am currently studying at Georgia Institute of Technology.
@@ -52,9 +55,44 @@
                     It wasn't until my sophomore year that I found my passion for programming. Once I had developed the skills needed to create
                     my own projects, software development actually became a hobby of mine rather than something I felt like I needed to do to
                     look good on a resume. Since then, I have worked on several projects including Minecraft mods, a Pokémon Platinum bot, a
-                    radio telescope, a card game repository, and several more.
+                    radio telescope, and a card game repository.
                 </p>
             </div>
+        </div>
+        <div id="additional-content">
+            <div id="more-about-me-content">
+                <span id="experience">Experience</span>
+                <p class="about-me" id="about-me-p3">
+                    Since I began my computer science studies, I have completed two internships and have worked as a part-time software
+                    developer. My first internship mainly involved working with PLCs, control panels, and circuit diagrams while my
+                    second internship mainly focused on front-end development using HTML, CSS, and JavaScript. During my time as a part-time
+                    software developer, I became very familiar with using the Android Studio IDE to make modifications to an Android
+                    application that was mainly written in Java and XML.
+                    <br>
+                    <br>
+                    In addition to my work experience, I also have a lot of project experience. During my time at school, I got the opportunity
+                    to work on two different capstone projects: a <a href="https://github.com/YCPRadioTelescope">radio telescope</a> and a
+                    <a href="https://github.com/YCP-Rev-Metrix">mobile application</a> intended to help bowlers improve their overall
+                    performance by tracking statistics and giving feedback on throws. In addition to these projects, I also got the opportunity
+                    to work with some friends on a <a href="https://github.com/ianvivi13/GameRepo">card game repository</a> in our software
+                    design class.
+                    <br>
+                    <br>
+                    I have also worked extensively on personal projects. I have been consistently working on Minecraft modding since Summer 2022,
+                    both with a friend and on my own. Additionally, some of my other projects have been great learning experiences for me,
+                    giving me the opportunity to learn new languages, technologies, or concepts relating to the field.
+                </p>
+                <span id="personal-life">Personal Life</span>
+                <p class="about-me" id="about-me-p4">
+                    In my free time, one of my favorite things to do is play games. One of the main reasons I was originally interested in
+                    computer science was the idea of developing my own game. Although this has not happened yet, I do intend on learning
+                    how to create a game completely from scratch sometime in the near future. When I'm not playing games, I enjoy programming,
+                    riding my electric unicycle, watching YouTube or TV, and spending time with friends and family.
+                </p>
+            </div>
+        </div>
+        <div id="bottom-toolbar">
+
         </div>
     </body>
 </html>
