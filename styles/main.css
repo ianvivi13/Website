@@ -1,5 +1,6 @@
 :root {
     --important-text-color: #6fe1a8;
+    --active-text-color: #04AA6D;
 }
 
 body {
@@ -47,5 +48,5 @@ body {
 }
 
 .active {
-    color: #04AA6D;
+    color: var(--active-text-color);
 }

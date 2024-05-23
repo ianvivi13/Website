@@ -26,6 +26,7 @@
     border-radius: 50%;
     background: radial-gradient(rgba(255,255,255, 1) 30%, rgba(214,255,215,1) 100%);
     z-index: 1;
+    filter: drop-shadow(0.1vw 0.2vw 0.2vw grey);
 }
 
 #headshot {
@@ -35,6 +36,7 @@
     border-radius: 50%;
     height: 32.5%;
     z-index: 3;
+    filter: drop-shadow(0.2vw 0.2vw 0.2vw grey);
 }
 
 #header-text {
@@ -81,7 +83,7 @@
     justify-content: center;
     width: 80%;
     margin-left: 10%;
-    margin-top: 52%;
+    margin-top: 50%;
 }
 
 #about-me-intro {
@@ -95,13 +97,15 @@
     width: 22%;
     margin-left: 17%;
     margin-top: 3.2%;
+    border: 0.2vw solid var(--important-text-color);
+    filter: drop-shadow(0.2vw 0.2vw 0.2vw grey);
 }
 
-#caption {
+#mod-caption {
     position: absolute;
     display: block;
     margin-left: 20.2%;
-    margin-top: 32%;
+    margin-top: 31.5%;
     color: #999999;
     font-size: 0.7vw;
 }
@@ -111,13 +115,16 @@
     line-height: 1.5vw;
 }
 
-#about-me-p1, #about-me-p2 {
+#about-me-p1, #about-me-p2, #about-me-p4, #about-me-p5 {
     width: 40%;
+}
+
+#about-me-p1, #about-me-p2 {
     margin-left: auto;
     margin-right: 10%;
 }
 
-#about-me-p2, #about-me-p3, #about-me-p4 {
+#about-me-p2, #about-me-p3, #about-me-p4, #about-me-p5 {
     color: #777777;
 }
 
@@ -133,7 +140,6 @@
 #experience {
     display: block;
     margin-left: 10%;
-    margin-top: 2%;
 }
 
 #personal-life {
@@ -143,17 +149,49 @@
 }
 
 #additional-content {
-    height: 35vw;
+    height: 40vw;
 }
 
-#about-me-p3, #about-me-p4 {
+#about-me-p3 {
     width: 80%;
     margin-left: 10%;
 }
 
+#revmetrix-sim {
+    position: absolute;
+    margin-top: 3%;
+    right: 17%;
+    width: 22%;
+    border-radius: 2%;
+    border: 0.2vw solid var(--important-text-color);
+    filter: drop-shadow(0.2vw 0.2vw 0.2vw grey);
+}
+
+#revmetrix-caption {
+    position: absolute;
+    display: block;
+    right: 24%;
+    margin-top: 22.7%;
+    color: #999999;
+    font-size: 0.7vw;
+}
+
+#about-me-p4, #about-me-p5 {
+    width: 40%;
+    margin-left: 10%;
+}
+
+.link {
+    color: var(--active-text-color);
+}
+
+.link:hover {
+    color: var(--important-text-color);
+}
+
 #bottom-toolbar {
-    height: 20vw;
+    height: 15vw;
     width: 100%;
-    background: linear-gradient(0deg, rgba(45,45,45,1) 80%, rgba(255,255,255,0.84) 100%);
+    background-color: #2d2d2d;
     margin-top: auto;
 }
